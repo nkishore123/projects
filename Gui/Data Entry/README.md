@@ -3,5 +3,5 @@ For this project 2 GUI's are required one for registering user details and anoth
 ## Resistration_form
 In this file user can enter their deails and submit their details
 
-## Details_form
+## Get_details
 In this file a person can able to query the table
