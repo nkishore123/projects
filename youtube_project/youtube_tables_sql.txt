@@ -1,0 +1,42 @@
+CREATE database youtube_details;
+use youtube_details;
+
+CREATE TABLE channels(
+		channel_id VARCHAR(255) primary key,
+        channel_name VARCHAR(255),
+        subscribers INT,
+        channel_views INT,
+        totalvideos INT,
+        channel_description TEXT,
+        playlist_id VARCHAR(255)
+);
+
+CREATE TABLE videos(
+		channel_name VARCHAR(255),
+        video_id VARCHAR(255) primary key,
+        channel_id VARCHAR(255),
+        title VARCHAR(255),
+        tags TEXT,
+        thumbnail VARCHAR(255),
+        description TEXT,
+        published_date VARCHAR(255),
+        duration VARCHAR(255),
+        views INT,
+        likes INT,
+        comments INT,
+        favorite_count INT,
+        definition VARCHAR(255),
+        caption_status VARCHAR(255),
+        FOREIGN KEY(channel_id) REFERENCES channels(channel_id)
+);
+
+
+CREATE TABLE comments(
+		comment_id VARCHAR(255) primary key,
+        video_id VARCHAR(255),
+        comment_text TEXT,
+        comment_author VARCHAR(255),
+        comment_published_date VARCHAR(255),
+        FOREIGN KEY(video_id) REFERENCES videos(video_id)
+);
+
