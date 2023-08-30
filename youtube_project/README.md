@@ -29,3 +29,10 @@ search options, including joining tables to get channel details.
 5. Trasforming the data to SQl using SQL database mysql.
 6. Utilizing mysql queries to get the answers for required questions.
 7. The answers for the mentioned questions are displayed through the streamlit application.
+
+## youtube_tablees_sql.txt 
+It has the code to create tables in mysql
+## youtube_detailes.py
+It contains the program
+
+
