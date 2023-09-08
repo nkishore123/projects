@@ -25,5 +25,7 @@ The solution must include the following steps:
 3. Enter "git clone https://github.com/PhonePe/pulse.git"
 #### PhonePe.ipynb contains the code to upload the data to mysql
 #### Phonepe-app.py contains the program for the project
+#### states.csv contains the state names
+
 # Demo Video
 https://tinyurl.com/627e5wyr
