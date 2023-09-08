@@ -23,7 +23,7 @@ The solution must include the following steps:
 1. Open command Promt
 2. Give the path to store the data
 3. Enter "git clone https://github.com/PhonePe/pulse.git"
-
-Phonepe-app.py contains the program for the project
+#### PhonePe.ipynb contains the code to upload the data to mysql
+#### Phonepe-app.py contains the program for the project
 # Demo Video
 https://tinyurl.com/627e5wyr
