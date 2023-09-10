@@ -11,3 +11,4 @@ This project will require skills in image processing, OCR, GUI development, and 
 3. Implement the image processing and OCR: Use easyOCR to extract the relevant information from the uploaded business card image.
 4. Display the extracted information: Once the information has been extracted, display it in a clean and organized manner in the Streamlit GUI.
 5. Implement database integration: Use a database management system like SQLite or MySQL to store the extracted information along with the uploaded business card image. You can use SQL queries to create tables, insert data, and retrieve data from the database, Update the data and Allow the user to delete the data through the streamlit UI
+## Demo video -- https://t.ly/r321M
