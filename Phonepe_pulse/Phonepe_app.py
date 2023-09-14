@@ -306,19 +306,17 @@ elif option == 'Charts':
                         st.plotly_chart(fig, use_container_width=True)
                 elif arc == 'Percentage':
                     if all_s:
-                        query = f'Select brand Brand,sum(percentage) percent FROM aggregate_users where year IN {year} and quarter IN {quarter} GROUP BY Brand ORDER BY percent DESC LIMIT 10 '
+                        query = f'Select brand Brand,percentage percent FROM aggregate_users where year IN {year} and quarter IN {quarter}'
                     else:
-                        query = f'''Select brand Brand,sum(percentage) percent
+                        query = f'''Select brand Brand,percentage percent
                                     from (SELECT * 
                                           FROM aggregate_users
                                           WHERE state = '{state}') sub
-                                    where year IN {year} and quarter IN {quarter}
-                                    GROUP BY Brand ORDER BY percent DESC 
-                                    LIMIT 10'''
+                                    where year IN {year} and quarter IN {quarter}'''
                     mycursor.execute(query)
 
                     df = pd.DataFrame(mycursor.fetchall(), columns=['Brand', 'percent'])
-
+                    
                     if chart_type == 'Pie':
                         fig = px.pie(df,
                                      names='Brand',
