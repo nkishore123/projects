@@ -24,3 +24,5 @@ This project aims to analyze Airbnb data using MongoDB Atlas, perform data clean
 #### Airbnb.ipynb contains data cleaning
 #### Airbnb.py contains the streamlit application for visualisations
 #### Airbnb.twb contains the dashboard which is created using Tableau
+
+### Demo Video - https://rb.gy/vusiq
