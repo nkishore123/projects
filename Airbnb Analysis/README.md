@@ -21,6 +21,6 @@ This project aims to analyze Airbnb data using MongoDB Atlas, perform data clean
 6. Interactive Visualizations: Develop dynamic and interactive visualizations that allow users to filter and drill down into the data based on their preferences. Enable users to interact with the visualizations to explore specific regions, property types, or time periods of interest.
 7. Dashboard Creation: Utilize Tableau or Power BI to create a comprehensive dashboard that presents key insights from your analysis. Combine different visualizations, such as maps, charts, and tables, to provide a holistic view of the Airbnb dataset and its patterns.
 
-### Airbnb.ipynb contains data cleaning
-### Airbnb.py contains the streamlit application for visualisations
-### Airbnb.twb contains the dashboard which is created using Tableau
+#### Airbnb.ipynb contains data cleaning
+#### Airbnb.py contains the streamlit application for visualisations
+#### Airbnb.twb contains the dashboard which is created using Tableau
