@@ -16,7 +16,7 @@ st.set_page_config(page_title='Biz card',
                    initial_sidebar_state = "expanded")
 
 option = option_menu(None, ["Home", "Upload", "Modify", 'About'],
-                     icons=['house', 'cloud-upload', "list-task", 'gear'],
+                     icons=['house', 'cloud-upload', "list-task", 'person-vcard-fill'],
                      menu_icon="cast", default_index=0, orientation="horizontal",
                      styles={
                          "container": {"padding": "0!important", "background-color": "grey"},
