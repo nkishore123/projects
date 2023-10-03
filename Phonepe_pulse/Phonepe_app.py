@@ -315,8 +315,8 @@ elif option == 'Charts':
                                     where year IN {year} and quarter IN {quarter}'''
                     mycursor.execute(query)
 
-                    df = pd.DataFrame(mycursor.fetchall(), columns=['Brand', 'percent'])
-                    
+                    df = pd.DataFrame(mycursor.fetchall(), columns=['Brand','percent'])
+
                     if chart_type == 'Pie':
                         fig = px.pie(df,
                                      names='Brand',
@@ -465,8 +465,9 @@ elif option == 'Maps':
                                 geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
                                 featureidkey='properties.ST_NM',
                                 locations='State',
-                                color='Total_Amount',
+                                color='State',
                                 title = 'Transaction_Amount',
+                                hover_data='Total_Amount',
                                 color_continuous_scale='sunset')
 
             fig.update_geos(fitbounds="locations", visible=False)
@@ -476,8 +477,9 @@ elif option == 'Maps':
                                 geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
                                 featureidkey='properties.ST_NM',
                                 locations='State',
-                                color='Total_Transactions',
+                                color='State',
                                 title='Total_Transactions',
+                                hover_data='Total_Transactions',
                                 color_continuous_scale='sunset')
 
             fig.update_geos(fitbounds="locations", visible=False)
@@ -563,8 +565,9 @@ elif option == 'Maps':
                                 geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
                                 featureidkey='properties.ST_NM',
                                 locations='State',
-                                color='total_users',
+                                color='State',
                                 title = 'Registered Users',
+                                hover_data='total_users',
                                 color_continuous_scale='YlOrRd')
 
             fig.update_geos(fitbounds="locations", visible=False)
@@ -574,8 +577,9 @@ elif option == 'Maps':
                                 geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
                                 featureidkey='properties.ST_NM',
                                 locations='State',
-                                color='total_appopens',
+                                color='State',
                                 title='App_Opens',
+                                hover_data='total_appopens',
                                 color_continuous_scale='YlOrRd')
 
             fig.update_geos(fitbounds="locations", visible=False)
