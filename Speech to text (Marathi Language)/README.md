@@ -1,5 +1,4 @@
-## Speech to Text transcription model for Marathi language using NLP
-
+# Speech to Text transcription model for Marathi language using NLP
 Objective
 The primary objective of this internship assignment is to evaluate your proficiency in natural
 language processing by developing a highly accurate transcription model for the Marathi
