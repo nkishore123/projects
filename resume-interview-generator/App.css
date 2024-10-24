@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.resume-upload {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input[type="file"] {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Maximum width */
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc; /* Light grey for loading */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.qa-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.qa-item {
+  background-color: #f8f8f8; /* Light grey background */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #4CAF50; /* Green color for questions */
+}
+
+.error {
+  color: red; /* Red color for errors */
+  font-weight: bold;
+}
