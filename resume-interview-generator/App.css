@@ -29,8 +29,8 @@ input[type="file"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%; /* Full width */
-  max-width: 400px; /* Maximum width */
+  width: 100%;
+  max-width: 400px; 
 }
 
 button {
@@ -38,7 +38,7 @@ button {
   padding: 10px 15px;
   font-size: 16px;
   color: white;
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,12 +46,12 @@ button {
 }
 
 button:disabled {
-  background-color: #ccc; /* Light grey for loading */
+  background-color: #ccc; 
   cursor: not-allowed;
 }
 
 button:hover:not(:disabled) {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }
 
 .qa-list {
@@ -60,7 +60,7 @@ button:hover:not(:disabled) {
 }
 
 .qa-item {
-  background-color: #f8f8f8; /* Light grey background */
+  background-color: #f8f8f8; 
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
@@ -68,7 +68,7 @@ button:hover:not(:disabled) {
 }
 
 h4 {
-  color: #4CAF50; /* Green color for questions */
+  color: #4CAF50; 
 }
 
 .error {
