@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { generateQuestionsAndAnswers } from '../OpenAI'; // Correctly import as a named export
+import { generateQuestionsAndAnswers } from '../OpenAI';
 
 const ResumeUpload = () => {
     const [questions, setQuestions] = useState([]);
@@ -27,7 +27,7 @@ const ResumeUpload = () => {
             return;
         }
         setLoading(true);
-        setError(''); // Clear any previous errors
+        setError(''); 
         try {
             const result = await generateQuestionsAndAnswers(resumeText);
             setQuestions(result.questions);
