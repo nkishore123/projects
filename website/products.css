@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+ /* Nav bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo h1{
+    font-size: 24px;
+    font:bold;
+    color: green;
+}
+
+.nav-links{
+    list-style:none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0;
+    /* gap: 30px; */
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.nav-links li{
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-links li:hover{
+    background-color: green;
+    color: white;
+}
+.nav-links li:hover a {
+    color: white; /* Ensures link text is white when <li> is hovered */
+}
+
+
+/* name and order */
+
+.top-level{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.name{
+    display: flex;
+    margin: 0px;
+}
+.name h1{
+    font-size: 36px;
+    margin: 0;
+}
+.date{
+    display: flex;
+    align-items: end;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.sort{
+    list-style:none;
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    gap: 30px;
+}
+
+.sort li{
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(145, 140, 140);
+    border-radius: 20px;
+}
+.sort li:hover{
+    background-color: green;
+    color: white;
+}
+.cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.card{
+    background-color: rgb(232, 229, 229);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transition:transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.10);
+}
+.card img{
+    width: 100%;
+    height: 70%;
+}
+.card h3,p{
+    padding: 2px;
+    padding-left: 20px;
+    margin: 0;
+}

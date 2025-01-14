@@ -1,0 +1,149 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+ /* Nav bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo h1{
+    font-size: 24px;
+    font:bold;
+    color: green;
+}
+
+.nav-links{
+    list-style:none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0;
+    /* gap: 30px; */
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.nav-links li{
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-links li:hover{
+    background-color: green;
+    color: white;
+}
+.nav-links li:hover a {
+    color: white; /* Ensures link text is white when <li> is hovered */
+}
+
+
+/* name and order */
+
+.top-level{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.name{
+    display: flex;
+    margin: 0px;
+}
+.name h1{
+    font-size: 36px;
+    margin: 0;
+}
+.count{
+    display: flex;
+    align-items: end;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* main card */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 75%;
+    gap: 20px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 242, 240);
+    border: 2px solid rgb(165, 159, 159);
+    border-radius: 25px;
+    overflow: hidden;
+    height: 110px;
+
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+.item-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.summary{
+    flex: 0 0 20%;
+    background-color: rgb(242, 242, 240);
+    border: 2px solid rgb(165, 159, 159);
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    max-height: 200px;
+}
+
+.summary-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.payment{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.item-name, .item-cost, .final-item-cost{
+    font: 18px solid;
+}
+.item-qt{
+    border: 2px solid rgb(165, 159, 159);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+}
